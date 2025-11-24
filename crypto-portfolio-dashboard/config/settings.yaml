@@ -1,0 +1,8 @@
+data_path: data
+base_currency: USD
+vendors:
+  prices: coingecko
+  coingecko:
+    api_key: ${CG-kPEhoZTjArPXKVEiJuUqkbpP}   # read from env at runtime
+    base_url: https://pro-api.coingecko.com/api/v3
+
