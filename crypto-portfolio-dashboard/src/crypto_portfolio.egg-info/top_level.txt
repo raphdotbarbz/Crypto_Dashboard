@@ -1,7 +1,0 @@
-analytics
-api
-factors
-io
-portfolio
-risk
-utils
