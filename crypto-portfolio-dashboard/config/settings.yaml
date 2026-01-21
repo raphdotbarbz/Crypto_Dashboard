@@ -1,6 +1,0 @@
-vendors:
-  prices: coingecko
-vendor_options:
-  coingecko:
-    api_key: ${COINGECKO_API_KEY}
-    base_url: https://pro-api.coingecko.com/api/v3
