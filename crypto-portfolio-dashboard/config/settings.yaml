@@ -1,0 +1,15 @@
+vendors:
+  prices: coingecko
+vendor_options:
+  coingecko:
+    api_key: "CG-kPEhoZTjArPXKVEiJuUqkbpP"
+    base_url: https://pro-api.coingecko.com/api/v3
+cache_policy:
+  vs_currency: usd
+  stale_after_seconds: 180    # consider stale after 3 minutes
+  overlap_seconds: 120        # refetch 2 minutes back to cover gaps
+  initial_lookback_days: 90   # bootstrap when no cache exists
+pricing:
+  vendor: coingecko
+  vs_currency: usd
+coin_map_path: config/coin_map.yaml
