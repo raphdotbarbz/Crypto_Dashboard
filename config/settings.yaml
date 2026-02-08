@@ -1,0 +1,30 @@
+vendors:
+  prices: coingecko
+vendor_options:
+  coingecko:
+    api_key: "CG-kPEhoZTjArPXKVEiJuUqkbpP"
+    base_url: https://pro-api.coingecko.com/api/v3
+cache_policy:
+  vs_currency: usd
+  stale_after_seconds: 180    # consider stale after 3 minutes
+  overlap_seconds: 120        # refetch 2 minutes back to cover gaps
+  initial_lookback_days: 90   # bootstrap when no cache exists
+pricing:
+  vendor: coingecko
+  vs_currency: usd
+coin_map_path: config/coin_map.yaml
+benchmarks:
+  # keys must match column names in your price store or loader aliases
+  - BTC
+  - ETH
+risk_free:
+  source: "factors.risk_free:get_daily_rf"  # already exists; returns daily rf as decimal
+  annualization: 365
+metrics:
+  horizons: [30, 180, 365]
+  var_alphas: [0.95, 0.99]
+  annualization: 365
+macro:
+  vix:
+    loader: "factors.macro:get_vix_series"
+    enable: true

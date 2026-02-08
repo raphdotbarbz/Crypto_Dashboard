@@ -1,0 +1,3 @@
+similarity,file_a,name_a,line_a,file_b,name_b,line_b
+0.996,/Users/raphbarberis/crypto-portfolio-dashboard/src/utils/jsonsafe.py,json_safe,7,/Users/raphbarberis/crypto-portfolio-dashboard/src/api/server.py,json_safe,104
+0.918,/Users/raphbarberis/crypto-portfolio-dashboard/src/portfolio/valuation.py,market_value,4,/Users/raphbarberis/crypto-portfolio-dashboard/src/portfolio/valuation.py,merge_with_prices_daily,46

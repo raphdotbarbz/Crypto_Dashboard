@@ -1,0 +1,32 @@
+Run started:2026-01-21 15:53:01.735135+00:00
+
+Test results:
+>> Issue: [B112:try_except_continue] Try, Except, Continue detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.3/plugins/b112_try_except_continue.html
+   Location: src/api/server.py:153:8
+152	            ser = load_price_series(sym, auto_backfill=True)
+153	        except Exception:
+154	            continue
+155	        if ser is None or len(ser) == 0:
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 1930
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 1
+Files skipped (0):
